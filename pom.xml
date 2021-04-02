@@ -169,7 +169,7 @@
                         <serverId>azure-auth</serverId>
                     </authentication>
                     <resourceGroup>maven-plugin</resourceGroup>
-                    <appName>maven-web-app-${maven.build.timestamp}</appName>
+                    <appName>reimagined-guacamole</appName>
                     <region>westeurope</region>
                     <javaVersion>1.8</javaVersion>
                     <resources>
