@@ -171,9 +171,9 @@
                     <resourceGroup>maven-plugin</resourceGroup>
                     <appName>reimagined-guacamole</appName>
                     <region>westus</region>
-                    <!-- <subscriptionId>53216760-80c0-41df-a806-d4138faa5e2c</subscriptionId>  
+                    <subscriptionId>53216760-80c0-41df-a806-d4138faa5e2c</subscriptionId>  
           			<resourceGroup>reimagined-guacamole-1617386357543-rg</resourceGroup>  
-         			<pricingTier>B2</pricingTier> -->
+         			<pricingTier>Basic_B2</pricingTier>
                     <javaVersion>1.8</javaVersion>
                     <runtime>
             			<os>Linux</os>
