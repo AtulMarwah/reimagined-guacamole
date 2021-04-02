@@ -1,5 +1,8 @@
 package com.spring.boot;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -25,7 +28,19 @@ public class Application {
 	
 	public static void main(String args[]){
 		
-		SpringApplication.run(Application.class, args);
+		InetAddress ip;
+        String hostname;
+        try {
+            ip = InetAddress.getLocalHost();
+            hostname = ip.getHostName();
+            System.out.println("Your current IP address : " + ip);
+            System.out.println("Your current Hostname : " + hostname);
+            SpringApplication.run(Application.class, args);
+ 
+        } catch (UnknownHostException e) {
+ 
+            e.printStackTrace();
+        }
 		
 		/*ApplicationContext beanInfo = SpringApplication.run(Application.class, args);
 		
