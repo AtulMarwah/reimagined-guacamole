@@ -165,9 +165,9 @@
 				<artifactId>azure-webapp-maven-plugin</artifactId>
 				<version>1.12.0</version>
 				 <configuration>
-                    <authentication>
+                    <!-- <authentication>
                         <serverId>azure-auth</serverId>
-                    </authentication>
+                    </authentication> -->
                     <resourceGroup>maven-plugin</resourceGroup>
                     <appName>reimagined-guacamole</appName>
                     <region>westeurope</region>
