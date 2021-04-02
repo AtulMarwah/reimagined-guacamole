@@ -110,20 +110,25 @@
 
 
 	</dependencies>
+	<!-- <build> 
+	<finalName>reimagined-guacamole</finalName> 
+	<plugins> 
+	<plugin> 
+		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin 
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-maven-plugin</artifactId> 
+		<version>1.4.5.RELEASE</version> 
+		</plugin> 
+		</plugins> 
+		</build> -->
 	<build>
-		<finalName>reimagined-guacamole</finalName>
-
-		<plugins>
-			<plugin>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- <version>1.4.5.RELEASE</version> -->
-			</plugin>
-		</plugins>
-
-
-
-
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>
