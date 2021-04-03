@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 //import com.spring.boot.dao.AdhayanDAO;
 import com.spring.boot.daoTwo.AdhayanDAOTwo;
@@ -45,6 +46,20 @@ public class Controller {
 		
 		return id;
 	}
+	
+	// thymeleaf changes
+	@RequestMapping("/")
+	public String index() {
+		return "index";
+	}
+
+	@RequestMapping("/helloworld")
+	public ModelAndView hello() {
+
+		String helloWorldMessage = "Hello world from hbk!";
+		return new ModelAndView("hello", "message", helloWorldMessage);
+	}
+	//
 	
 	/*@POST
 	@Consumes(MediaType.APPLICATION_JSON_VALUE)
